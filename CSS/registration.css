@@ -65,6 +65,14 @@ h2 {
     background-color: #226be0;
 }
 
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
 
 /*Or divider*/
 #reset-password-container {
@@ -113,19 +121,21 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-#registration-container button {
+#registration-container button:hover {
+    background-color: #226be0;
+}
+
+#registerForm button {
+    width: 75%;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 1rem;
+    margin-left: 12.5%;
     padding: 0.5rem;
     color: white;
     background-color: #0b57d0;
 }
 
-#registration-container button:hover {
-    background-color: #226be0;
-}
 
 /*Footer*/
 footer {
