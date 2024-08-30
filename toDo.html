@@ -10,10 +10,8 @@
     <nav id="navBar">
         <h1>ToDo App</h1>
         <div id="nav-links">
-            <ul>
-                <li>Change Password</li>
-                <li>logout</li>
-            </ul>
+            <p>Change Password</p>
+            <p>Logout</p>
         </div>
     </nav>
     <div id="welcomeBack">
@@ -21,18 +19,47 @@
     </div>
 
     <div id="todo-container">
-        <div id="headers">
-            <h3>Activity Name</h3>
-            <h3>Description</h3>
-            <h3>Due Date</h3>
+        <table>
+            <tr id="headers">
+                <th>Activity Name</th>
+                <th>Description</th>
+                <th>Due Date</th>
+                <th>blank</th>
+                <th>blank</th>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td>Description 1</td>
+                <td>2024-09-23</td>
+                <td><a href="#"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></a></td>
+                <td><a href="#"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon"></a></td>
+            </tr>
+        </table>
+
+        
+
+
+
+        <!--<div id="header">
+            <div id="headers">
+                <h3>Activity Name</h3>
+                <h3>Description</h3>
+                <h3>Due Date</h3>
+            </div>
+            <span class="divider"></span>
         </div>
         <div id="todo-activities">
-            <h4>Activity 1</h4>
-            <h4>Description 1</h4>
-            <h4>2024-09-23</h4>
-            <a href="#"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></a>
-            <a href="#"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon"></a>
-        </div>
+            <div class="todo-activity">
+                <h4>Activity 1</h4>
+                <h4>Description 1</h4>
+                <h4>2024-09-23</h4>
+                <div class="icons">
+                    <a href="#"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></a>
+                    <a href="#"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon"></a>
+                </div>
+            </div>
+            <span class="divider"></span>
+        </div>-->
     </div>
 
     <div id="sticky-container">

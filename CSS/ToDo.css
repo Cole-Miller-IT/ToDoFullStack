@@ -1,0 +1,73 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkgray;
+}
+
+/*Nav*/
+#navBar {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-size: 1.5rem;
+}
+
+#navBar h1 {
+    padding-left: 1rem;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+/*Welcome Back*/
+#welcomeBack {
+    background-color: aquamarine;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+/*Todo Container*/
+#todo-container {
+    margin: 1rem;
+    
+}
+
+
+/*Todo Activities*/
+table, tr, th, td {
+    border: 3px solid black;
+}
+
+.todo-activity img {
+    max-width: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+#sticky-container {
+    background-color: chocolate;
+}
+
+footer {
+    background-color: cadetblue;
+}
