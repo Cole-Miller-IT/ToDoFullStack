@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="./CSS/ToDo.css">
 </head>
 <body>
+    <div id="overlay" onclick="overlayOff()"></div>
+
     <nav id="navBar">
         <h1>ToDo App</h1>
         <div id="nav-links">
-            <p>Change Password</p>
-            <p>Logout</p>
+            <p onclick="changePassword()">Change Password</p>
+            <p onclick="logout()">Logout</p>
         </div>
     </nav>
     <div id="welcomeBack">
@@ -24,15 +26,225 @@
                 <th>Activity Name</th>
                 <th>Description</th>
                 <th>Due Date</th>
-                <th>blank</th>
-                <th>blank</th>
+                <th></th>
+                <th></th>
             </tr>
             <tr class="todo-activity">
                 <td>Activity 1</td>
-                <td>Description 1</td>
+                <td class="description">Description 1</td>
                 <td>2024-09-23</td>
-                <td><a href="#"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></a></td>
-                <td><a href="#"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon"></a></td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
+            </tr>
+            <tr class="todo-activity">
+                <td>Activity 1</td>
+                <td class="description">Description 1</td>
+                <td>2024-09-23</td>
+                <td class="edit"><img src="./Assets/edit-3-svgrepo-com.svg" alt="edit icon"></td>
+                <td class="delete"><img src="./Assets/delete-svgrepo-com.svg" alt="delete icon" onclick="deleteActivity()"></td>
             </tr>
         </table>
 
@@ -63,11 +275,13 @@
     </div>
 
     <div id="sticky-container">
-        <button><img src="./Assets/plus-circle-svgrepo-com.svg"></button>
+        <button onclick="addActivity()"><img src="./Assets/plus-circle-svgrepo-com.svg"></button>
     </div>
 
     <footer>
         <p>Copyright © 2024 Cole Miller, All Rights Reserved</p>
     </footer>
+    <script src="activity.js"></script>
+    <script src="userProfileFunctions.js"></script>
 </body>
 </html>
